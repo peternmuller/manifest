@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build and Core -->
+  <remove-project name="platform/build_repo" />
+  <project path="build/make" name="peternmuller/android_build" remote="github" revision="uvite" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="peternmuller/android_build_soong" remote="github" revision="uvite" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <remove-project name="device/qcom/qssi" />
+  <project path="device/qcom/qssi" name="peternmuller/android_device_qcom_qssi" remote="github" revision="uvite" />
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="peternmuller/android_device_qcom_sepolicy_vndr" remote="github" revision="uvite" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="peternmuller/android_frameworks_av" remote="github" revision="uvite" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="peternmuller/android_frameworks_base" remote="github" revision="uvite" />
+
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="peternmuller/android_hardware_interfaces" remote="github" revision="uvite" />
+
+  <!-- Manifest -->
+  <project path="manifest" name="peternmuller/manifest" remote="github" revision="uvite" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="peternmuller/android_packages_apps_Settings" remote="github" revision="uvite" />
+  <remove-project name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="peternmuller/android_packages_modules_Bluetooth" remote="github" revision="uvite" />
+
+  <!-- Vendor (AOSPA) -->
+  <project path="vendor/aospa" name="peternmuller/android_vendor_aospa" remote="github" revision="uvite" >
+    <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
+
+  <!-- Vendor (QCOM QSSI) -->
+  <remove-project name="platform/vendor/qcom-opensource/core-utils" />
+  <project path="vendor/qcom/opensource/core-utils" name="peternmuller/android_vendor_qcom-opensource_core-utils" remote="github" revision="uvite" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="peternmuller/android_vendor_qcom_opensource_commonsys_system_bt" remote="github" revision="uvite" />
+
+</manifest>
