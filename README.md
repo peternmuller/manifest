@@ -19,14 +19,14 @@ simplifies using [Git](http://git-scm.com/book) in the context of the Android so
 
 ```bash
 # Make a directory where Repo will be stored and add it to the path
-$ mkdir ~/.bin
-$ PATH=~/.bin:$PATH
+$ mkdir ~/bin
+$ PATH=~/bin:$PATH
 
 # Download Repo itself
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 
 # Make Repo executable
-$ chmod a+x ~/.bin/repo
+$ chmod a+x ~/bin/repo
 ```
 
 ### Initializing Repo ###
@@ -41,7 +41,7 @@ $ cd WORKSPACE
 
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
-$ repo init -u https://github.com/AOSPA/manifest -b vauxite
+$ repo init -u https://github.com/peternmuller/manifest -b vauxite
 ```
 
 ### Downloading the source tree ###
@@ -56,7 +56,7 @@ and their change histories.
 # The -j# option specifies the number of concurrent download threads to run.
 # 4 threads is a good number for most internet connections.
 # You may need to adjust this value if you have a particularly slow connection.
-$ repo sync --current-branch --no-tags -j4
+$ repo sync --current-branch --no-tags -j$(nproc --all)
 ```
 
 #### Syncing specific projects ####
