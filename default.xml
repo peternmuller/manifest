@@ -47,8 +47,17 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com" />
 
+  <remote  name="pnm"
+           fetch="https://github.com/peternmuller"
+           revision="vauxite" />
+
+  <remote  name="blobs-pnm"
+           fetch="https://gitlab.com/peternmuller"
+           revision="vauxite" />
+
   <include name="aosp.xml"/>
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
+  <include name="forks.xml"/>
 
 </manifest>
