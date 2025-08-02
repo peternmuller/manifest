@@ -86,6 +86,8 @@
   <project path="vendor/aospa/prebuilt" name="android_vendor_aospa_prebuilt" remote="blobs-pnm" />
   <remove-project name="android_vendor_google_gms" />
   <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-pnm" clone-depth="1" />
+  <remove-project name="android_vendor_google_pixel" />
+  <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="pnm" clone-depth="1" />
   <remove-project name="proprietary_vendor_qcom_common" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="pnm" />
 
