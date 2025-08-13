@@ -94,5 +94,7 @@
   <!-- Vendor (QCOM Vendor) -->
   <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="pnm" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="pnm" />
 
 </manifest>
