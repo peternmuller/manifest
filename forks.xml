@@ -36,6 +36,8 @@
   <!-- External -->
   <remove-project name="AOSPA/android_external_arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="pnm" />
+  <remove-project name="platform/external/bouncycastle" />
+  <project path="external/bouncycastle" name="android_external_bouncycastle" remote="pnm" />
   <remove-project name="platform/external/skia" />
   <project path="external/skia" name="android_external_skia" remote="pnm" />
   <remove-project name="platform/external/wpa_supplicant_8" />
@@ -48,6 +50,8 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="pnm" />
   <remove-project name="AOSPA/android_frameworks_native" />
   <project path="frameworks/native" name="android_frameworks_native" remote="pnm" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="pnm" />
 
   <!-- Hardware -->
   <remove-project name="AOSPA/android_hardware_interfaces" />
