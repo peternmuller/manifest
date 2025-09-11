@@ -60,5 +60,6 @@
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
   <include name="forks.xml"/>
+  <include name="asb.xml"/>
 
 </manifest>

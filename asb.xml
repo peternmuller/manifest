@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/DocumentsUI" />
+  <project path="packages/apps/DocumentsUI" name="aospa-op12/android_packages_apps_DocumentsUI" remote="github" revision="vauxite" />
+  <remove-project name="platform/packages/apps/ManagedProvisioning" />
+  <project path="packages/apps/ManagedProvisioning" name="aospa-op12/android_packages_apps_ManagedProvisioning" remote="github" revision="vauxite" />
+  <remove-project name="platform/packages/modules/AppSearch" />
+  <project path="packages/modules/AppSearch" name="aospa-op12/android_packages_modules_AppSearch" remote="github" revision="vauxite" />
+  <remove-project name="AOSPA/android_packages_modules_Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="aospa-op12/android_packages_modules_Bluetooth" remote="github" revision="vauxite" />
+  <remove-project name="platform/packages/modules/CellBroadcastService" />
+  <project path="packages/modules/CellBroadcastService" name="aospa-op12/android_packages_modules_CellBroadcastService" remote="github" revision="vauxite" />
+  <remove-project name="platform/packages/modules/IntentResolver" />
+  <project path="packages/modules/IntentResolver" name="aospa-op12/android_packages_modules_IntentResolver" remote="github" revision="vauxite" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <project path="packages/modules/Permission" name="aospa-op12/android_packages_modules_Permission" remote="github" revision="vauxite" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="aospa-op12/android_packages_providers_MediaProvider" remote="github" revision="vauxite" />
+
+</manifest>
