@@ -97,6 +97,10 @@
   <remove-project name="proprietary_vendor_qcom_common" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="pnm" />
 
+  <!-- Vendor (QCOM QSSI) -->
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="pnm" />
+
   <!-- Vendor (QCOM Vendor) -->
   <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="pnm" />
