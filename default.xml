@@ -50,10 +50,14 @@
 
   <remote  name="pnm"
            fetch="https://github.com/peternmuller"
-           revision="vauxite" />
+           revision="staging" />
 
   <remote  name="blobs-pnm"
            fetch="https://gitlab.com/peternmuller"
+           revision="vauxite" />
+
+  <remote  name="aospa-kona"
+           fetch="https://github.com/aospa-kona"
            revision="vauxite" />
 
   <include name="aosp.xml"/>
